@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shoppy">
+<uses-permission android:name="android.permission.CAMERA"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_shoppy"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_shoppy"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shoppy"
+
+        >
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9551199143478222~2944306774"/>
+        <activity
+            android:name=".UpdateDishActivity"
+            android:label="@string/title_activity_udate_dish"
+            android:theme="@style/Theme.Shoppy.NoActionBar"></activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.Shoppy.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+    </application>
+
+</manifest>
